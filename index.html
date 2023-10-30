@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROMI | Decentralized Perpatual Exchange</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body style="background-color: #191919;">
+    <header>
+        <nav
+            class="flex justify-between items-center px-14 shadow-lg shadow-[#151515] border-b-[1px] border-[#ffffff09] border-opacity-75">
+            <div class="">
+                <a href="/index.html"><img src="New_Logo.png" alt="Logo" class="w-[60px]"></a>
+            </div>
+            <div>
+                <ul class="flex justify-center items-center gap-10 text-[#a7a9a7] text-sm tracking-wider font-medium">
+                    <li><a class="hover:text-[#EEEEEE]" href="/index.html">Home</a></li>
+                    <li><a class="hover:text-[#EEEEEE]" href="#">Dashboard</a></li>
+                    <li><a class="hover:text-[#EEEEEE]" href="#">NFT</a></li>
+                    <li><a class="hover:text-[#EEEEEE]" href="#">Earn</a></li>
+                    <li><a class="hover:text-[#EEEEEE]" href="#">Buy</a></li>
+                    <li><a class="hover:text-[#EEEEEE]" href="#">Referrals</a></li>
+                    <li><a class="hover:text-[#EEEEEE]" href="#">Ecosystem</a></li>
+                    <li><a class="hover:text-[#EEEEEE]" href="#">About</a></li>
+                </ul>
+            </div>
+            <div class="nav_buttons flex items-center gap-6">
+                <button
+                    class="bg-[#3eb489] px-4 leading-tight h-9 rounded-md text-white text-sm font-bold hover:bg-[#207A59]">Trade</button>
+                <button
+                    class="px-4 leading-tight h-9 rounded-md text-white text-sm font-medium tracking-wide border border-[#ffffff25] flex items-center hover:bg-[#2A2A2A]"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" class=" mr-2">
+                        <path fill="rgba(255,255,255,0)" d="M0 0h24v24H0z" />
+                        <path data-name="↳ ✏️ Label"
+                            d="M18.162 7.464H7.446a.8.8 0 0 0-.8.8.8.8 0 0 0 .8.8h10.716a.8.8 0 0 1 .8.8v6.976a.8.8 0 0 1-.8.8H6.375a1.341 1.341 0 0 1-1.34-1.336V7.196a1.341 1.341 0 0 1 1.34-1.34h12.322a.8.8 0 0 0 .8-.8.8.8 0 0 0-.8-.8H6.375a2.95 2.95 0 0 0-2.947 2.94v9.108a2.95 2.95 0 0 0 2.947 2.946h11.787a2.414 2.414 0 0 0 2.411-2.411V9.875a2.414 2.414 0 0 0-2.411-2.411Zm-.8 5.893a1.072 1.072 0 0 0-1.072-1.072 1.072 1.072 0 0 0-1.072 1.072 1.072 1.072 0 0 0 1.068 1.067 1.072 1.072 0 0 0 1.072-1.067Z"
+                            fill="#fff" />
+                    </svg>Connect
+                    Wallet</button>
+                <button
+                    class="px-2 leading-tight h-9 rounded-md text-white text-sm font-medium tracking-wide border border-[#ffffff25] flex items-center hover:bg-[#2A2A2A]">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24.002" viewBox="0 0 24 24.002" width="24"
+                        class="mr-1">
+                        <path d="m0 .003h24v24h-24z" fill="none" />
+                        <path d="m23.64 14.905a12 12 0 1 1 -8.74-14.545 12 12 0 0 1 8.74 14.545z" fill="#fff"
+                            transform="translate(0 -.001)" />
+                        <g transform="translate(6.858 3.628)">
+                            <path d="m383.612 0-.112.382v11.075l.112.112 5.141-3.039z" fill="#343434"
+                                transform="translate(-378.471)" />
+                            <path d="m5.141 0-5.141 8.53 5.141 3.039z" fill="#8c8c8c" />
+                            <path d="m387.3 727.927-.063.077v3.945l.063.185 5.144-7.245z" fill="#3c3c3b"
+                                transform="translate(-382.162 -715.385)" />
+                            <path d="m5.141 732.135v-4.207l-5.141-3.038z" fill="#8c8c8c"
+                                transform="translate(0 -715.385)" />
+                            <path d="m392.07 477.706 5.141-3.039-5.141-2.337z" fill="#141414"
+                                transform="translate(-386.929 -466.137)" />
+                            <path d="m0 474.667 5.141 3.039v-5.376z" fill="#393939" transform="translate(0 -466.137)" />
+                        </g>
+                    </svg>
+                    <span class="h-[20px] w-[2px] bg-[#ffffff25] ml-1"></span>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" color="white"
+                        height="20" width="20" xmlns="http://www.w3.org/2000/svg" style="color: white;" class="ml-2">
+                        <path
+                            d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="flex flex-col mb-24 px-4">
+            <div class="max-w-[1264px] w-[1264px] px-6 pt-20 mx-auto">
+                <div class="">
+                    <div class="text-6xl font-bold text-[#ffffff] leading-tight mb-4">Decentralized<br>Perpetual
+                        Exchange</div>
+                    <div class="text-xl text-[#cecece] w-[420px] font-normal mb-6">
+                        <p>Trade BTC, ETH, AVAX and other top cryptocurrencies with up to 30x leverage directly from
+                            your wallet</p>
+                    </div>
+                    <a class="px-4 py-2 text-white text-sm rounded-md font-normal bg-[#3eb489] hover:bg-[#207A59]"
+                        href="#/trade">Launch Exchange</a>
+                </div>
+            </div>
+            <div class="flex justify-between items-center px-6 pt-20 max-w-[1264px] w-[1254px] mx-auto">
+                <div class="flex items-center justify-start border border-[#ffffff15] rounded-sm w-[380px] py-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ml-6 mr-8" height="49.792" viewBox="0 0 49 49.792"
+                        width="49">
+                        <path
+                            d="m37.207-28.7-15.671-5.979a4.878 4.878 0 0 0 -1.736-.321 4.878 4.878 0 0 0 -1.738.321l-15.673 5.979a3.712 3.712 0 0 0 -2.389 3.467v20.062a3.712 3.712 0 0 0 2.389 3.471l15.671 5.975a4.878 4.878 0 0 0 1.74.325 4.878 4.878 0 0 0 1.738-.321l15.669-5.979a3.712 3.712 0 0 0 2.393-3.471v-20.062a3.712 3.712 0 0 0 -2.393-3.467z"
+                            fill="#03cfcd" transform="translate(0 35)" />
+                        <path
+                            d="m37.207-28.7-15.671-5.979a4.878 4.878 0 0 0 -1.736-.321 4.878 4.878 0 0 0 -1.738.321l-15.673 5.979a3.712 3.712 0 0 0 -2.389 3.467v20.062a3.712 3.712 0 0 0 2.389 3.471l15.671 5.975a4.878 4.878 0 0 0 1.74.325 4.878 4.878 0 0 0 1.738-.321l15.669-5.979a3.712 3.712 0 0 0 2.393-3.471v-20.062a3.712 3.712 0 0 0 -2.393-3.467z"
+                            fill="#303fd0" transform="translate(9.404 45.196)" />
+                        <path
+                            d="m8.656 29.08-8.656-3.303v-16.01a3.714 3.714 0 0 1 2.389-3.467l15.671-5.98a4.88 4.88 0 0 1 3.476 0l8.656 3.3v16.01a3.712 3.712 0 0 1 -2.392 3.47l-15.668 5.98a4.88 4.88 0 0 1 -3.476 0z"
+                            fill="#50d0fe" transform="translate(9.404 10.196)" />
+                        <path
+                            d="m17.6-8.25h-10.378a2.44 2.44 0 0 0 -2.255 1.506 2.438 2.438 0 0 0 .533 2.661l2.29 2.292-5.955 5.955a2.441 2.441 0 0 0 0 3.451l1.725 1.726a2.441 2.441 0 0 0 3.452 0l5.954-5.955 2.294 2.294a2.441 2.441 0 0 0 4.167-1.726v-10.373a1.831 1.831 0 0 0 -1.827-1.831zm-17.552 36h10.37a2.441 2.441 0 0 0 1.726-4.167l-2.293-2.297 5.954-5.955a2.441 2.441 0 0 0 0-3.452l-1.725-1.724a2.441 2.441 0 0 0 -3.452 0l-5.954 5.954-2.294-2.293a2.441 2.441 0 0 0 -4.167 1.726v10.373a1.831 1.831 0 0 0 1.831 1.831z"
+                            fill="#fff" transform="matrix(.70710678 -.70710678 .70710678 .70710678 10.37 24.136)" />
+                    </svg>
+                    <div class="flex flex-col justify-center items-start">
+                        <div class="text-[#cecece] text-base font-medium ">Total Trading Volume</div>
+                        <div class="text-3xl text-[#ffffff] font-medium ">$0</div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-start border border-[#ffffff15] rounded-sm w-[380px] py-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ml-6 mr-8" height="40" viewBox="0 0 47 40"
+                        width="47">
+                        <rect fill="#03cfcd" height="32" rx="4" width="40" />
+                        <rect fill="#303fd0" height="32" rx="4" width="40" x="7" y="8" />
+                        <path d="m4 0h29a0 0 0 0 1 0 0v20a4 4 0 0 1 -4 4h-29a0 0 0 0 1 0 0v-20a4 4 0 0 1 4-4z"
+                            fill="#50d0fe" transform="translate(7 8)" />
+                        <path
+                            d="m44.876-27.5h-11.991a2.437 2.437 0 0 0 -1.724 4.161l3.291 3.291-7.452 7.448-7.452-7.452a3.249 3.249 0 0 0 -4.6 0l-6.972 6.981a1.625 1.625 0 0 0 0 2.3l2.3 2.3a1.625 1.625 0 0 0 2.3 0l4.678-4.679 7.446 7.45a3.249 3.249 0 0 0 4.6 0l9.75-9.75 3.291 3.291a2.438 2.438 0 0 0 4.159-1.726v-11.99a1.623 1.623 0 0 0 -1.624-1.625z"
+                            fill="#fff" transform="translate(-3.5 37.75)" />
+                    </svg>
+                    <div class="flex flex-col justify-center items-start">
+                        <div class="text-[#cecece] text-base font-medium ">Open Interest</div>
+                        <div class="text-3xl text-[#ffffff] font-medium ">$0</div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-start border border-[#ffffff15] rounded-sm w-[380px] py-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ml-6 mr-8" width="47" height="41"
+                        viewBox="0 0 47 41">
+                        <g id="ic_totaluser" transform="translate(45 -33)">
+                            <rect id="Rectangle_423" data-name="Rectangle 423" width="32" height="32" rx="5"
+                                transform="translate(-45 33)" fill="rgba(3,209,207,0.99)" />
+                            <rect id="Rectangle_424" data-name="Rectangle 424" width="32" height="32" rx="5"
+                                transform="translate(-30 42)" fill="#303fd0" />
+                            <path id="Intersection_34" data-name="Intersection 34"
+                                d="M22895,786V768a5,5,0,0,1,5-5h12v18a5,5,0,0,1-5,5Z" transform="translate(-22925 -721)"
+                                fill="#50d0fe" />
+                            <path id="Path_1618" data-name="Path 1618"
+                                d="M5.786-1.427A3.861,3.861,0,0,0,9.644-5.285,3.861,3.861,0,0,0,5.786-9.142,3.861,3.861,0,0,0,1.929-5.285,3.861,3.861,0,0,0,5.786-1.427Zm27,0a3.861,3.861,0,0,0,3.858-3.858,3.861,3.861,0,0,0-3.858-3.858,3.861,3.861,0,0,0-3.858,3.858A3.861,3.861,0,0,0,32.789-1.427ZM34.718.5H30.86a3.846,3.846,0,0,0-2.718,1.121,8.817,8.817,0,0,1,4.527,6.594h3.978a1.927,1.927,0,0,0,1.929-1.929V4.359A3.861,3.861,0,0,0,34.718.5ZM19.288.5a6.747,6.747,0,0,0,6.751-6.751A6.747,6.747,0,0,0,19.288-13a6.747,6.747,0,0,0-6.751,6.751A6.747,6.747,0,0,0,19.288.5ZM23.917,2.43h-.5a9.495,9.495,0,0,1-4.129.964,9.515,9.515,0,0,1-4.129-.964h-.5A6.945,6.945,0,0,0,7.715,9.374V11.11A2.894,2.894,0,0,0,10.608,14H27.967A2.894,2.894,0,0,0,30.86,11.11V9.374A6.945,6.945,0,0,0,23.917,2.43ZM10.433,1.623A3.846,3.846,0,0,0,7.715.5H3.858A3.861,3.861,0,0,0,0,4.359V6.288A1.927,1.927,0,0,0,1.929,8.217H5.9A8.839,8.839,0,0,1,10.433,1.623Z"
+                                transform="translate(-40.287 54.499)" fill="#fff" />
+                        </g>
+                    </svg>
+                    <div class="flex flex-col justify-center items-start">
+                        <div class="text-[#cecece] text-base font-medium ">Total Users</div>
+                        <div class="text-3xl text-[#ffffff] font-medium ">0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-24 px-4 border-t border-[#4D4D4E]">
+            <div class="flex flex-wrap justify-between items-center w-[1264px] max-w-[1264px] mx-auto">
+                <div class="flex flex-col gap-3">
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                            <g id="ic_liquidity" transform="translate(0)">
+                                <rect id="Rectangle_1" data-name="Rectangle 1" width="40" height="40" rx="4"
+                                    transform="translate(0)" fill="none" />
+                                <g id="Group_86" data-name="Group 86" transform="translate(-7.307 -4)">
+                                    <path id="Path_172" data-name="Path 172"
+                                        d="M27.854-24.323a1.617,1.617,0,0,0-2.631,0C22.2-19.945,15-9.03,15-4.243,15,1.817,20.166,6.731,26.538,6.731S38.077,1.817,38.077-4.243C38.077-9.03,30.88-19.945,27.854-24.323Z"
+                                        transform="translate(-5 30)" fill="rgba(3,209,207,0.99)" />
+                                    <path id="Path_173" data-name="Path 173"
+                                        d="M27.854-24.323a1.617,1.617,0,0,0-2.631,0C22.2-19.945,15-9.03,15-4.243,15,1.817,20.166,6.731,26.538,6.731S38.077,1.817,38.077-4.243C38.077-9.03,30.88-19.945,27.854-24.323Z"
+                                        transform="translate(6.539 35.769)" fill="#303fd0" />
+                                    <path id="Intersection_1" data-name="Intersection 1"
+                                        d="M0,16.035C0,12.383,4.19,5.162,7.521,0c2.2,3.9,4.017,7.858,4.017,10.266a11.188,11.188,0,0,1-10.2,10.9A10.505,10.505,0,0,1,0,16.035Z"
+                                        transform="translate(21.538 15.491)" fill="#50d0fe" stroke="rgba(0,0,0,0)"
+                                        stroke-width="1" />
+                                </g>
+                            </g>
+                        </svg>
+                        <div class="text-white text-xl font-medium">Reduce Liquidation Risks</div>
+                    </div>
+                    <div class="text-[#cecece] text-lg font-medium w-[290px]">An aggregate of high-quality price feeds
+                        determine when liquidations
+                        occur. This keeps positions safe from temporary wicks.</div>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                            <g id="ic_cost" transform="translate(0)">
+                                <rect id="Rectangle_1" data-name="Rectangle 1" width="40" height="40" rx="4"
+                                    transform="translate(0)" fill="none" />
+                                <path id="Path_171" data-name="Path 171"
+                                    d="M24.311-24.51a1.171,1.171,0,0,0-1.906,0C20.213-21.338,15-13.432,15-9.964a8.162,8.162,0,0,0,8.358,7.949,8.162,8.162,0,0,0,8.358-7.949C31.716-13.432,26.5-21.338,24.311-24.51Z"
+                                    transform="translate(-4.948 32.463)" fill="#4e09f8" />
+                                <path id="Path_174" data-name="Path 174"
+                                    d="M17-11.6a.634.634,0,0,0-.63-.63h-.585V-17.27a.634.634,0,0,0-.63-.63h-1.8a.576.576,0,0,0-.518.344l-.63,1.17a.634.634,0,0,0,.029.62.633.633,0,0,0,.531.3h.587v3.239h-.585a.634.634,0,0,0-.63.63v1.169a.634.634,0,0,0,.63.63h3.6a.634.634,0,0,0,.63-.63ZM29.149-21.629a2.646,2.646,0,0,0-1.5-2.433,12.7,12.7,0,0,0-5.36-1.125,30.774,30.774,0,0,0-8.035,1.453,28.556,28.556,0,0,1-7.392,1.366A10.57,10.57,0,0,1,3.4-22.921a2.519,2.519,0,0,0-.836-.142A2.609,2.609,0,0,0,0-20.415V-6.074A2.646,2.646,0,0,0,1.5-3.641a12.7,12.7,0,0,0,5.36,1.125A30.774,30.774,0,0,0,14.9-3.968a28.556,28.556,0,0,1,7.392-1.366,10.57,10.57,0,0,1,3.464.552,2.519,2.519,0,0,0,.836.142,2.612,2.612,0,0,0,2.561-2.654Z"
+                                    transform="translate(3 30.09)" fill="rgba(3,209,207,0.99)" />
+                                <path id="Path_175" data-name="Path 175"
+                                    d="M17-11.6a.634.634,0,0,0-.63-.63h-.585V-17.27a.634.634,0,0,0-.63-.63h-1.8a.576.576,0,0,0-.518.344l-.63,1.17a.634.634,0,0,0,.029.62.633.633,0,0,0,.531.3h.587v3.239h-.585a.634.634,0,0,0-.63.63v1.169a.634.634,0,0,0,.63.63h3.6a.634.634,0,0,0,.63-.63ZM29.149-21.629a2.646,2.646,0,0,0-1.5-2.433,12.7,12.7,0,0,0-5.36-1.125,30.774,30.774,0,0,0-8.035,1.453,28.556,28.556,0,0,1-7.392,1.366A10.57,10.57,0,0,1,3.4-22.921a2.519,2.519,0,0,0-.836-.142A2.609,2.609,0,0,0,0-20.415V-6.074A2.646,2.646,0,0,0,1.5-3.641a12.7,12.7,0,0,0,5.36,1.125A30.774,30.774,0,0,0,14.9-3.968a28.556,28.556,0,0,1,7.392-1.366,10.57,10.57,0,0,1,3.464.552,2.519,2.519,0,0,0,.836.142,2.612,2.612,0,0,0,2.561-2.654Z"
+                                    transform="translate(8.851 37.613)" fill="#303fd0" />
+                                <path id="Intersection_2" data-name="Intersection 2"
+                                    d="M0,15.115V4.773A2.61,2.61,0,0,1,2.561,2.124a2.513,2.513,0,0,1,.836.143,10.561,10.561,0,0,0,3.463.552,28.558,28.558,0,0,0,7.392-1.366A30.79,30.79,0,0,1,22.288,0Q22.8,0,23.3.035V10.371a2.612,2.612,0,0,1-2.562,2.655,2.525,2.525,0,0,1-.835-.142,10.574,10.574,0,0,0-3.465-.552A28.526,28.526,0,0,0,9.045,13.7a30.777,30.777,0,0,1-8.035,1.452Q.5,15.149,0,15.115Z"
+                                    transform="translate(8.85 12.425)" fill="rgba(3,209,207,0.99)"
+                                    stroke="rgba(0,0,0,0)" stroke-width="1"
+                                    style="mix-blend-mode: screen;isolation: isolate" />
+                            </g>
+                        </svg>
+                        <div class="text-white text-xl font-medium">Save on Costs</div>
+                    </div>
+                    <div class="text-[#cecece] text-lg font-medium w-[290px]">Enter and exit positions with minimal
+                        spread and zero price impact.
+                        Get the optimal price without incurring additional costs.</div>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42.872" height="40" viewBox="0 0 42.872 40">
+                            <g id="ic_simpleswaps" transform="translate(1.436)">
+                                <rect id="Rectangle_1" data-name="Rectangle 1" width="40" height="40" rx="4"
+                                    transform="translate(0)" fill="none" />
+                                <path id="Path_178" data-name="Path 178"
+                                    d="M20.7,23.181H6.633a3.309,3.309,0,0,1-2.34-5.649L7.4,14.422.969,7.989a3.31,3.31,0,0,1,0-4.68L3.309.97a3.31,3.31,0,0,1,4.681,0L14.422,7.4l3.109-3.109a3.309,3.309,0,0,1,5.65,2.34V20.7A2.482,2.482,0,0,1,20.7,23.181Z"
+                                    transform="translate(14.956 0.435) rotate(45)" fill="#04cfd0" />
+                                <path id="Path_179" data-name="Path 179"
+                                    d="M2.482,0H16.548a3.309,3.309,0,0,1,2.34,5.649L15.779,8.759l6.432,6.433a3.31,3.31,0,0,1,0,4.68l-2.339,2.339a3.31,3.31,0,0,1-4.681,0L8.759,15.779,5.65,18.888A3.309,3.309,0,0,1,0,16.548V2.482A2.482,2.482,0,0,1,2.482,0Z"
+                                    transform="translate(25.046 2.814) rotate(45)" fill="#303fd0" />
+                                <path id="Intersection_3" data-name="Intersection 3"
+                                    d="M7.707,12.224h-4.4A3.308,3.308,0,0,1,.971,6.575L7.544,0V7.925h4.4a3.309,3.309,0,0,1,2.34,5.649L7.707,20.148Z"
+                                    transform="translate(12.375 7.941)" fill="#04cfd0" stroke="rgba(0,0,0,0)"
+                                    stroke-width="1" style="mix-blend-mode: screen;isolation: isolate" />
+                            </g>
+                        </svg>
+                        <div class="text-white text-xl font-medium">Simple Swaps</div>
+                    </div>
+                    <div class="text-[#cecece] text-lg font-medium w-[290px]">Open positions through a simple swap
+                        interface. Conveniently swap from
+                        any supported asset into the position of your choice.</div>
+                </div>
+            </div>
+        </div>
+        <div class="my-16 px-4">
+            <div class="w-1264px max-w-[1264px] mx-auto">
+                <h2 class="text-4xl text-white font-bold max-w-[387px] my-6">Two tokens create our ecosystem</h2>
+
+                <div class="flex gap-4">
+                    <div class="border border-[#4D4D4E] rounded-md bg-[#151515] p-6 shadow-lg shadow-[#00000085]">
+                        <div class="flex items-center gap-4 text-2xl font-normal text-white"><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAREAAAERCAMAAABrSmO8AAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAs1QTFRFAAAAKioqLCwsHR0dNDQ0ICAg/f39////HBwc6enpnZ2dISEh/v7+GRkZ7OzsoaGhJCQkGBgYmZmZFBQUoqKiERER5eXlmpqaIyMjExMTHx8fEhIS5OTkIiIiRkZGPT096Ojo1NTUQUFB3t7eGhoaNjY2FxcX5ubm3d3dLi4u6+vr2dnZmJiYLS0tFhYW29vbQkJCFRUVQ0NDLy8v7e3tlJSU8vLy3NzcnJycSkpK2NjYk5OTODg40tLS+vr6kpKSTU1N8PDw1dXV+/v7T09PPz8/8fHxzc3N+Pj4SUlJNzc3ycnJ9fX1QEBAzs7O9vb2RUVFxsbGlZWVy8vLUFBQqamprKysR0dHHh4e9PT04+PjysrKUVFR9/f3kJCQS0tLGxsb8/PzW1tbV1dXSEhI0NDQ7+/vJiYm1tbW4eHhzMzMZWVlTk5OXl5e0dHR19fX4ODgREREz8/PZ2dnVVVV39/fYGBg7u7u09PTYWFhTExM2tra6urqWVlZWFhYVFRUY2NjXV1dVlZWUlJSbW1tiYmJX19fe3t7cnJy+fn5hoaGKSkpbm5uPj4+MDAwbGxscHBwWlpaMTExaWlpdXV15+fn/Pz8ampqfn5+KysrMjIygICA4uLiYmJigoKCdHR0yMjIcXFxZGRkgYGBxcXFaGhoioqKxMTEdnZ2ZmZmiIiIOzs7b29vhYWFkZGRXFxchISEOTk5x8fHeHh4f39/NTU1i4uLjIyMPDw8c3NzfHx8jY2NOjo6l5eXJSUlh4eHeXl5d3d3jo6Oenp6U1NTq6urj4+PfX19s7Oztra2ubm5g4ODvLy8t7e3wMDAMzMzo6Ojvb29KCgonp6evr6+v7+/wcHBsbGxm5ubpaWloKCgw8PDn5+fqKioa2trJycnlpaWsrKyu7u7sLCwrq6ur6+vra2tuLi4tbW1pKSktLS0wsLCurq6p6enqqqqA5X3GAAAAO90Uk5TAP//0P/////A/////5D///+A/0D/EP///zDwIP//////////oP9w/////////2D//1D//////////////////////////////////////////////////+D/////////sP/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////pkgv9AAAbP0lEQVR4nO1d+78WVbkfQ/eAbAwkTFBqmyQkBZKEZaEEHo8WSWkXQ1HUDLQENTXyFqZpKmFmYhmlqSVeul+PHQkviZoeMLscO5esc6mjnfM3HOZ91/dZ6/nOembmffe7957NZ76/wPustWbWfPez1qz1XNYkSYMGDRo0aNCgQYMGDRo0aNCgQYMGDRo0aNCgQYMGDRo0aNCgQYMGDRo0qCX2eEW3Lcfs2ct+1AV79aVpOrarpuN2tdy7x90ZeYzvTzNM6KLpPq2Wr+x5l0YWE9uEpOmkjpvu41ruOwTdGjkIIWk6ucOm46Tlq4akayODgJA0ndJR0/2Clq8eou4NP/YPCUn7p3bQdFzYcrehZJoiZBclB1RueqBuuZtQMh2EvOa1nWrJgGtwULI7UTJGCEmS17n/9lWjBBpy8K7/7z6UzAgISZLXQ0sOqdB0pqs8q/Vrd6FkjCIkSd5QnZJDXdXZ7jcoeePQ9XYYcAgRkiRvAiVzSppiDpkrElAympdqE0DIYV62PyiZV9h0nxwhnpLRu8c5AIS8OZQeXkVL5kcI8ZS8ZSh6OxxIY4R4LUltLVngahxhXPGtve/scADdfxsXQEtS6yUMQo40r/n2Xnd2OIDOvyZf9A6UzYi2BCELI2VHubKje9vZ4QAeelGsUCiJvYTf6coWR6+7ZLRSgkc+Jl78dygfkys61pX8vXHl40blwJmKBz7eqvEu1NiLCkDIu82LL3U1RtPqdV6JhmR4D+po2yuGzAkFl1826rRkRqmGZHgvao0PhNCQ9xXeAFpyYi96OwyYVEFDMgglfi6BhpxUcovRRclYPOj7tfwDafpBLfkQap7sBIaG7Bpgx9HS5cOjaC4RQhZp+eJMtlzL3q/nEmjIKbrWqZmsnyzWK1zd03rb+yHANDzk6Vq+sC09UEuPR+2Vu36cESfkzLaU7QcYOHU3DgghNGQWQr6flp/qKTEIOQs1mBKsS+qtJePR/Y9o+dmpYKYueRvk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"
+                                alt="mmxBigIcon" width="40px"> $ROMI</div>
+                        <div class="flex flex-col gap-3 mt-4 text-white">
+                            <div class="text-lg font-normal mb-3">$ROMI is the utility and governance token. Accrues
+                                30% of
+                                the platform's generated fees.</div>
+                            <div class="text-[#cecece] text-sm">Ethereum APR: 0.00%</div>
+                            <div class="flex gap-4 items-center">
+                                <div class=""><a
+                                        class="px-4 py-2 text-white rounded-md font-normal bg-[#3eb489] hover:bg-[#207A59]"
+                                        href="#">Buy</a></div><a href="#"
+                                    class="px-2 py-2 rounded-md text-white text-sm font-medium tracking-wide border border-[#ffffff25] hover:bg-[#2A2A2A]"
+                                    target="_blank">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border border-[#4D4D4E] rounded-md bg-[#151515] p-6 shadow-lg shadow-[#00000085]">
+                        <div class="flex items-center gap-4 text-2xl font-normal text-white"><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ0AAAENCAMAAAAizMA6AAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAspQTFRFAAAAKioqR0dHZGRkf39/lJSUp6enurq6zc3N4ODg8/Pz////Y2NjRkZGKSkpGhoaS0tLfHx8ra2t0tLS7+/vSkpKGRkZJiYmV1dXiIiIubm56urqh4eHVlZWJSUlIyMjX19fm5ub1tbW/v7+mpqaXl5eISEhUlJSmZmZUVFRMzMzenp6wcHB+vr6eXl5MjIyOjo6jY2NOTk5Pz8/kpKS5OTkPj4+Z2dn0dHR0NDQZmZmJycnlZWV8vLyU1NTvb29d3d34eHhdnZ2LS0t9fX1mJiYHh4eo6Oj/f39oqKi+fn5kZGRioqK9vb2iYmJa2tr7e3t6OjoNzc3FhYWoaGhb29v8fHxbW1t1dXVGBgYn5+fnp6eExMT7Ozs3NzcdXV1dHR0s7Oz2NjYTExMgICAfn5+sLCwICAgzs7O5eXlW1tbbGxsg4ODeHh4cHBwZWVlVVVVLi4uMDAwFBQU4+Pj4uLiFRUVxsbGxMTErKysqqqqRUVFSUlJ8PDww8PDODg43d3d39/fc3NzycnJwMDAoKCgwsLCOzs709PTWFhYjIyMQkJCj4+PaWlp/Pz8x8fHQEBA2tra+Pj46+vrMzMzSEhIPj4+T09PQ0NDRERETk5OOjo619fXYWFhk5OT2dnZ1NTUt7e3aGho29vbkJCQ9PT0zMzM9/f3XV1dgoKCQUFBNjY2vLy8IiIi6enp+/v7ERERNDQ0e3t7TU1NlpaWqKiohYWFq6ur5+fnQEBAl5eXHBwcUFBQYGBgpaWluLi4qampyMjINTU1KCgonZ2dampq3t7eysrKgYGB5ubmtLS0PT09ODg4tra2Pz8/hISEu7u7y8vLOTk5nJycxcXFr6+vjo6Ov7+/fX197u7uPDw8cnJyNDQ0Nzc3VFRUGxsbsrKyhoaGsbGxPDw8JCQkNjY2YmJiXFxcEhISKysrPT09NTU1MTExHx8f4VDv/gAAAO50Uk5TAP//////////////////oP///////5D//////////////////////////////////////////////////////////////+D///////////////9g//////+A//8w/////////////////////////////0D//1D/////////////////////kP///////////////xD/wP////+A///////////////////wQP////8QIP/////////g/8D///////8w//////////+wYP/Q////cP////////////9Q/7D///+g/////yD/////8NctWw0AABDTSURBVHic7V35f1XFFb9CQggPxLBVwP2hRCQ2oQHBGAUNkCBBAUX2XWWpoiIiVUTEBQFBobiguICIFgoqLmyCoqK2drNatattbdXW/g/l5S135t6Ze+cs984Nn3x/I2/O957zZd67s5w54zgtaEGScEKr1kXFbUralrZLSWhX2rakTXFR+w4n2vYwFnQ8qaxT5y4pA3Tp3Kmsazfb/kaGH5zcvUdPEx1E9Oxxyqmn2facG6efceZZaagSeaTP6nX2ObYjYEPv8lKsEC5Ky8+1HQcdfc7rW0GXIouKvuf/0HY8BFRWMXQKGaVV/WxHhcKPqvtzS5FF/+oBtmOD4oKB0UiRxaALbccHQM1FtVFqkUFtcY3tKM1w8SVRS5HFJc3gJTN4SDxaZDDkUtvRBuKy8rr4tMigbuhltmPWYdjw+ni1yKC+YZjtuFXoVj0ifi0yGHF58uZ2IxvtaJFB4yjb0cu44kp7WmQw+mzbCrgYM8iuFhkMGmNbhSzGNqDn6pxIXzXWthLHcPU42zrkMe4a21pUjretgYjxlTa1mDAxEV8SF+lJk62JkZwviYsp7S2JMdx25GoMt6FFn6m2w9Zhap/YxZjGttzJj4rpMYsxw3bEwZgRpxY1M22HG4aZ8S2NzUrgu8SLcbNiEmN2wgYZaqSvjUWM62zHaYrrotfi+jm2gzTHnI4Ri1E5xXaIEMyNdt4yz9JqHxYj5kUoxnzb0cExPzIxymyHhkFUcsy2HRgOZS1iiJgdgRg/th0UHvxyNNuekQG3HDfYDoiGG1jFuNF2OFRMbxFDxAI2MS62sPfOjfqbmMS42eKGMx8ab2ERY+GttgPhwaLbONRYbDsMLtzOIMYS20Hw4SdkMZr5QEMGddhxx3HwOnFRfydJjJubweo4BEspGwvHy+vExUzCi+W4eZ24uAstRnfbrkcB7Hx22XH1C5pHPXId/W7qgyuWT7wnh1NWLMXzTLm3KM/TZhF5o28qSoz7SM+8X0VZDaap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"
+                                alt="mlpBigIcon" width="40px"> $ZLP</div>
+                        <div class="flex flex-col gap-3 mt-4 text-white">
+                            <div class="text-lg font-normal mb-3">$ZLP is the liquidity provider token. Accrues 70%
+                                of the
+                                platform's generated fees.</div>
+                            <div class="text-[#cecece] text-sm">Ethereum APR: 1,665,616,144.95%</div>
+                            <div class="flex gap-4 items-center">
+                                <div class=""><a
+                                        class="px-4 py-2 text-white rounded-md font-normal bg-[#3eb489] hover:bg-[#207A59]"
+                                        href="#">Buy</a></div><a href="#" target="_blank" rel="noreferrer"
+                                    class="px-2 py-2 rounded-md text-white text-sm font-medium tracking-wide border border-[#ffffff25] hover:bg-[#2A2A2A]">Read
+                                    more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="flex justify-center items-center pt-10 bg-[#151515] border-t border-[#4d4d4e]">
+        <div class="flex flex-col items-center">
+            <div class="Footer-logo">
+                <img src="New_Logo.png" alt="MetaMask" class="w-[150px]">
+            </div>
+            <div class="flex items-center gap-16 my-6">
+                <a class="hover:text-white hover:fill-white" href="#" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="22.741" viewBox="0 0 28 22.741" width="28">
+                        <path
+                            d="m25.122-16.2a12.335 12.335 0 0 0 2.878-2.97 11.5 11.5 0 0 1 -3.3.888 5.723 5.723 0 0 0 2.523-3.162 11.3 11.3 0 0 1 -3.642 1.386 5.725 5.725 0 0 0 -4.193-1.812 5.736 5.736 0 0 0 -5.739 5.739 6.478 6.478 0 0 0 .142 1.315 16.312 16.312 0 0 1 -11.837-6.006 5.7 5.7 0 0 0 -.782 2.9 5.735 5.735 0 0 0 2.558 4.779 5.779 5.779 0 0 1 -2.594-.728v.071a5.739 5.739 0 0 0 4.6 5.632 6.068 6.068 0 0 1 -1.51.2 7.233 7.233 0 0 1 -1.084-.089 5.749 5.749 0 0 0 5.368 3.971 11.493 11.493 0 0 1 -7.124 2.452 11.876 11.876 0 0 1 -1.386-.072 16.217 16.217 0 0 0 8.812 2.577c10.554 0 16.328-8.742 16.328-16.328 0-.249 0-.497-.018-.743z"
+                            fill="#91929e" transform="translate(0 21.871)" />
+                    </svg>
+                </a>
+                <a class="hover:text-white hover:fill-white" href="$" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 0 32 32" width="32">
+                        <path d="m0 0h32v32h-32z" fill="none" />
+                        <path
+                            d="m28.823-8.158-2.143 2.058a.629.629 0 0 0 -.241.6v15.11a.614.614 0 0 0 .241.6l2.1 2.054v.455h-10.538v-.439l2.17-2.107c.214-.214.214-.277.214-.6v-12.222l-6.036 15.322h-.812l-7.027-15.322v10.268a1.412 1.412 0 0 0 .392 1.181l2.821 3.42v.455h-8.017v-.455l2.821-3.42a1.367 1.367 0 0 0 .366-1.179v-11.877a1.019 1.019 0 0 0 -.334-.875l-2.514-3.027v-.455h7.795l6.019 13.213 5.294-13.2h7.429z"
+                            fill="#91929e" transform="translate(.678 13.601)" />
+                    </svg>
+                </a>
+                <a class="hover:text-white hover:fill-white" href="#" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 0 32 32" width="32">
+                        <path d="m0 0h32v32h-32z" fill="none" />
+                        <path
+                            d="m8.749-2.668c0-.121-.137-.206-.3-.19-.153 0-.274.084-.274.19 0 .121.121.206.3.19.152-.001.274-.085.274-.19zm-1.64-.237c-.037.105.069.227.227.258a.247.247 0 0 0 .327-.105c.032-.105-.069-.227-.227-.274a.271.271 0 0 0 -.327.12zm2.33-.095c-.153.037-.258.137-.243.258.016.105.153.174.311.137s.258-.137.243-.243-.158-.163-.311-.152zm3.47-20.2a12.645 12.645 0 0 0 -12.909 12.864 13.221 13.221 0 0 0 8.938 12.614c.675.121.912-.3.912-.638 0-.327-.016-2.13-.016-3.238 0 0-3.691.791-4.467-1.571 0 0-.6-1.535-1.466-1.93 0 0-1.208-.828.084-.812a2.784 2.784 0 0 1 2.037 1.36 2.788 2.788 0 0 0 3.844 1.1 2.931 2.931 0 0 1 .844-1.777c-2.948-.327-5.922-.754-5.922-5.827a4 4 0 0 1 1.245-3.106 4.982 4.982 0 0 1 .137-3.579c1.1-.343 3.639 1.424 3.639 1.424a12.391 12.391 0 0 1 3.312-.448 12.391 12.391 0 0 1 3.312.448s2.537-1.772 3.639-1.424a4.98 4.98 0 0 1 .137 3.581 4.1 4.1 0 0 1 1.361 3.106c0 5.089-3.106 5.495-6.054 5.827a3.118 3.118 0 0 1 .9 2.447c-.005 1.779-.016 3.979-.016 4.409 0 .343.243.759.912.638a13.1 13.1 0 0 0 8.849-12.6 12.93 12.93 0 0 0 -13.252-12.868zm-7.783 18.185c-.069.053-.053.174.037.274.084.084.206.121.274.053.069-.053.053-.174-.037-.274-.084-.085-.206-.122-.274-.053zm-.57-.427c-.037.069.016.153.121.206a.157.157 0 0 0 .223-.037c.037-.069-.016-.153-.121-.206-.101-.032-.186-.016-.223.037zm1.709 1.877c-.084.069-.053.227.069.327.121.121.274.137.343.053.069-.069.037-.227-.069-.327-.116-.121-.275-.137-.343-.053zm-.6-.775c-.084.053-.084.19 0 .311s.227.174.3.121a.241.241 0 0 0 0-.327c-.08-.121-.217-.174-.301-.105z"
+                            fill="#91929e" transform="translate(3 26.203)" />
+                    </svg>
+                </a>
+                <a class="hover:text-white hover:fill-white" href="#" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 0 32 32" width="32">
+                        <path d="m0 0h32v32h-32z" fill="none" />
+                        <path
+                            d="m13.078-23.2a13.076 13.076 0 0 0 -13.078 13.075 13.076 13.076 0 0 0 13.078 13.078 13.076 13.076 0 0 0 13.078-13.078 13.076 13.076 0 0 0 -13.078-13.075zm6.423 8.96-2.146 10.111c-.158.717-.585.891-1.181.554l-3.274-2.41-1.573 1.518a.825.825 0 0 1 -.659.322l.232-3.327 6.059-5.474c.264-.232-.058-.364-.406-.132l-7.488 4.714-3.227-1.007c-.7-.221-.717-.7.148-1.039l12.609-4.862c.585-.211 1.096.142.905 1.028z"
+                            fill="#91929e" transform="translate(3 26.203)" />
+                    </svg>
+                </a>
+                <a class="hover:text-white hover:fill-white" href="#" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="27" viewBox="0 0 23.625 27" width="23.625">
+                        <path
+                            d="m15.673-10.8a1.438 1.438 0 0 0 -1.373-1.5 1.438 1.438 0 0 0 -1.377 1.5 1.447 1.447 0 0 0 1.377 1.5 1.438 1.438 0 0 0 1.373-1.5zm-6.3-1.5a1.438 1.438 0 0 0 -1.377 1.5 1.447 1.447 0 0 0 1.373 1.5 1.438 1.438 0 0 0 1.377-1.5 1.43 1.43 0 0 0 -1.377-1.5zm14.256-8.545a2.774 2.774 0 0 0 -2.768-2.781h-18.093a2.774 2.774 0 0 0 -2.768 2.782v18.252a2.774 2.774 0 0 0 2.768 2.781h15.309l-.716-2.5c3.951 3.673 2.863 2.678 6.264 5.684zm-3.847 12.8a4.935 4.935 0 0 1 -4.131 2.052s-.486-.58-.891-1.094a4.26 4.26 0 0 0 2.44-1.607 7.724 7.724 0 0 1 -1.552.8 9.841 9.841 0 0 1 -8.426-.476c-.027-.018-.355-.2-.554-.338a4.2 4.2 0 0 0 2.363 1.593c-.4.513-.9 1.121-.9 1.121a4.895 4.895 0 0 1 -4.121-2.052 18.079 18.079 0 0 1 1.944-7.871 6.676 6.676 0 0 1 3.793-1.417l.135.162a9.107 9.107 0 0 0 -3.55 1.772s.3-.162.8-.391a11.471 11.471 0 0 1 10.085.391 8.985 8.985 0 0 0 -3.362-1.715l.189-.216a6.676 6.676 0 0 1 3.793 1.417 18.079 18.079 0 0 1 1.941 7.868z"
+                            fill="#91929e" transform="translate(0 23.625)" />
+                    </svg>
+                </a>
+            </div>
+            <div class="flex gap-4">
+                <a class="text-white my-2" href="#">Terms and Conditions</a>
+                <a class="text-white my-2" href="#">Referral Terms</a>
+                <a class="text-white my-2" target="_blank" href="#">Media_Kit</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
